@@ -1,0 +1,27 @@
+.paginations {
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &__item {
+    width: 37px;
+    display: inline-block;
+    padding: 5px 2px;
+
+    color: $color-accent;
+    border: thin solid $color-accent;
+
+    transition: color $transition-normal, background-color $transition-normal;
+    &.m-active {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+
+    @include hover {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+  }
+}

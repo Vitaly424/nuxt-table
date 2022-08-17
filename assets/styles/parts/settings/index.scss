@@ -1,0 +1,32 @@
+@import "./fonts";
+@import "./base";
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(197 202 211) 6%,
+    rgb(255 255 255 / 41%) 70%,
+    rgb(255 255 255) 98%
+  );
+
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  line-height: $line-height-default;
+  color: $color-accent;
+}
+
+.main {
+  margin: 23px 0 100px;
+}
+
+.container {
+  max-width: 1024px;
+
+  padding: 0 15px;
+  margin: 30px auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}

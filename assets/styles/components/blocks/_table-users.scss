@@ -1,0 +1,83 @@
+.table-users {
+  min-width: 604px;
+  margin: 0 auto;
+  width: 100%;
+
+  background: rgb(0, 13, 36);
+  border: thin solid $color-accent;
+  border-spacing: 0px;
+  border-collapse: collapse;
+
+  &__head {
+    font-size: 20px;
+
+    td {
+      padding: 10px;
+      color: $color-white;
+    }
+  }
+
+  &__body {
+    font-size: 16px;
+
+    tr {
+      border-bottom: thin solid $color-accent;
+
+      @include hover {
+        background-color: $color-white;
+        color: $color-accent;
+
+        td {
+          color: $color-accent;
+
+          &:nth-child(2) {
+            min-width: 300px;
+          }
+        }
+      }
+    }
+
+    td {
+      padding: 10px;
+
+      color: $color-white;
+      transition: color $transition-normal;
+      cursor: pointer;
+    }
+  }
+
+  &__id {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &.m-sort {
+      color: darken($color-green, 10%);
+
+      svg {
+        fill: darken($color-green, 10%);
+        transform: rotate(180deg);
+      }
+    }
+
+    span {
+      margin-left: 5px;
+      flex-shrink: 0;
+    }
+
+    svg {
+      fill: $color-white;
+
+      transition: fill $transition-normal;
+    }
+
+    transition: color $transition-normal;
+
+    @include hover {
+      color: darken($color-green, 10%);
+      svg {
+        fill: darken($color-green, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.user-comment {
+  background-color: $color-accent;
+  color: $color-white;
+  padding: 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px $color-accent;
+
+  @include w-to($screen-md) {
+    padding: 30px 15px;
+  }
+
+  &__number {
+    font-size: 20px;
+  }
+
+  &__title {
+    margin: 20px 0;
+    font-size: 23px;
+  }
+
+  &__comments {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    padding: 10px;
+
+    border-radius: 10px;
+    color: $color-accent;
+
+    background-color: $color-white;
+    border: thin solid $color-white;
+
+    transition: background-color $transition-normal, color $transition-normal;
+    @include hover {
+      background-color: $color-accent3;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Размеры экрана
+$screen-sm: 375px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+// Переходы
+$transition-fast: 0.2s;
+$transition-slowly: 0.3s;
+
+$transition-function: linear;
+
+$transition-normal: $transition-fast $transition-function;
+
+// Шрифты
+$font-family-default: "Roboto", sans-serif;
+$font-size-default: 14px;
+$line-height-default: 1;
+$font-weight-default: 400;
+
+// Цвета
+$color-accent: #000000;
+$color-accent2: rgb(44, 41, 41);
+$color-accent3: #626060;
+$color-white: #fff;
+$color-green: #78faf5;
+ 
+$bold: 700;
+$semi: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
